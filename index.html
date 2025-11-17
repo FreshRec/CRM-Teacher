@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Учителя</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              accent: 'var(--color-accent)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-primary: #4f46e5;
+        --color-secondary: #f9fafb;
+        --color-accent: #10b981;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .whitespace-pre-wrap {
+        white-space: pre-wrap;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
